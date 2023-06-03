@@ -13,9 +13,9 @@ function Nav() {
     useEffect(()=>{
         const getAndSetProviders = async () => {
             const response = await getProviders()
-            getAndSetProviders(response)
+            setProviders(response)
         }
-        return setProviders()
+        return getAndSetProviders()
     },[])
     
 
