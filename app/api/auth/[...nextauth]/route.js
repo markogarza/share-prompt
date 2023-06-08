@@ -1,8 +1,8 @@
-import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+import NextAuth from 'next-auth';
+import GoogleProvider from 'next-auth/providers/google';
 
-import User from "@models/user";
-import { connectToDb } from "@utils/database";
+import User from '@models/user';
+import { connectToDb } from '@utils/database';
 
 const handler = NextAuth({
   providers: [
@@ -31,14 +31,14 @@ const handler = NextAuth({
           await User.create({
             email: profile.email,
             // username: profile.email.split('@')[0]
-            username: profile.name.replace(/[ .]/g, "").toLowerCase(),
+            username: profile.name.replace(/[ .]/g, '').toLowerCase(),
             image: profile.picture,
           });
         }
 
         return true;
       } catch (error) {
-        console.log("Error checking if user exists: ", error.message);
+        console.log('Error checking if user exists: ', error.message);
         return false;
       }
     },
