@@ -28,7 +28,7 @@ const Nav = () => {
           height={30}
           className='object-contain'
         />
-        <p className='logo_text'>PromptHub</p>
+        <p className='logo_text'>PromptShare</p>
       </Link>
 
       {/* Desktop Navigation */}
@@ -183,11 +183,11 @@ export default Nav;
 //     <nav className="flex-between w-full mb-16 pt-3">
 //         <Link href='/' className="flex gap-2 flex-center">
 //             <Image src='assets/images/logo.svg'
-//             alt="PromptHub"
+//             alt="PromptShare"
 //             width={30}
 //             height={30}
 //             className="object-contain" />
-//             <p className="logo_text">PromptHub</p>
+//             <p className="logo_text">PromptShare</p>
 //         </Link>
             
 //         {/* // Desktop Navigation */}
