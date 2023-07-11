@@ -4,7 +4,7 @@ import '@styles/globals.css'
 
 
 export const metadata = {
-  title: 'Promptopia',
+  title: 'PromptHub',
   description: 'Discover & Share AI prompts'
 }
 
